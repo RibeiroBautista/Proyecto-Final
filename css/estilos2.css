@@ -1560,6 +1560,9 @@ body {
   #menu .menuNav nav a {
     font-size: 1rem;
   }
+  .container .contenido-noticias img {
+    display: none;
+  }
 }
 
 @media (min-width: 680px) and (max-width: 1024px) {
