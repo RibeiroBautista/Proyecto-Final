@@ -283,32 +283,32 @@
 }
 .articulo1:nth-child(1) {
     .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
+        background-color: #f1f0f065;
+        border-color: #a74bad;
     }
 }
 .articulo1:nth-child(2) {
     .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
+        background-color: #f1f0f065;
+        border-color: #a74bad;
     }
 }
 .articulo1:nth-child(3) {
     .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
+        background-color: #f1f0f065;
+        border-color: #a74bad;
     }
 }
 .articulo1:nth-child(4) {
     .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
+        background-color: #f1f0f065;
+        border-color: #a74bad;
     }
 }
 .articulo1:nth-child(5) {
     .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
+        background-color: #f1f0f065;
+        border-color: #a74bad;
     }
 }
     
@@ -333,6 +333,49 @@
         justify-content: center;
         color: $color-light;
     }
+
+    }
+    .articulo1 img {
+        filter: grayscale(100%);
+    }
+    .articulo1 img:hover {
+        transition: all 1.2s;
+        filter: grayscale(0%);
+    }
+
+    .container--jugadores {
+        background-image: url(../img/paisaje.jpg);
+        background-size: cover;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        .galeria-jugadores {
+            display: grid;
+            height: auto;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto; 
+            gap: 1rem;
+            justify-items: center;
+            justify-content: space-evenly;
+            .articulo1 {
+                width: 25%;
+                height: auto;
+            }
+            .card__img {
+                width: auto;
+                height: auto;
+                img {
+                    width: 330px;
+                    height: 330px;
+                }
+            }
+        }
+        .titulo--jugadores {
+            display: flex;
+            justify-content: center;
+            color: $color-light;
+        }
     }
 /* FIN DE LA SECCION -- PAGES/JUGADORES.HTML */
 
@@ -502,59 +545,7 @@ body {
 /* FIN DE LA SECCION : PAGES/AYUDA.HTML */
 
 /* SECCION : PAGES/JUGADORES */
-.articulo1:nth-child(1) {
-    .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
-    }
-}
-.articulo1:nth-child(2) {
-    .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
-    }
-}
-.articulo1:nth-child(3) {
-    .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
-    }
-}
-.articulo1:nth-child(4) {
-    .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
-    }
-}
-.articulo1:nth-child(5) {
-    .card:hover {
-        background-color: #970265;
-        border-color: #9a13a5;
-    }
-}
-    
-.container--jugadores {
-    background-image: url(../img/paisaje.jpg);
-    background-size: cover;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    .galeria-jugadores {
-        display: grid;
-        height: auto;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto; 
-        gap: 1rem;
-        justify-items: center;
-        justify-content: space-evenly;
-    }
-    .titulo--jugadores {
-        display: flex;
-        justify-content: center;
-        color: $color-light;
-    }
-    }
+
 /* FIN DE LA SECCION : PAGES/JUGADORES */
 
 /*-------------------------------------------- AREA FOOTER #GLOBAL# --------------------------------------------*/
@@ -806,7 +797,6 @@ body {
             align-content: center;
             justify-content: center;
             .articulo1 {
-                height: auto;
                 img {
                     width: 100%;
                     height: auto;
@@ -839,7 +829,6 @@ body {
             align-items: center;
             align-content: center;
             .articulo1 {
-                height: auto;
                 img {
                     width: 100%;
                     height: auto;
