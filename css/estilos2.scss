@@ -518,6 +518,7 @@ body {
 
 /* SECCION : PAGES/AYUDA.HTML */
 .container-ayuda {
+    text-align: center;
     .ayuda {
         display: flex;
         justify-content: center;
@@ -526,27 +527,35 @@ body {
             text-align: center;
         }
     }
-}
-.areaTexto {
-    text-align: center;
-    overflow: hidden;
-    border-radius: 5rem;
-    border: $color-base solid 2px;
-    textarea {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        
+    input {
+        width: auto;
     }
 }
+.buscador {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .areaTexto {
+        text-align: center;
+        overflow: hidden;
+        border-radius: 5rem;
+        textarea {
+            border: #cccccc solid 2.5px;
+            width: 50%;
+            height: 32px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    input {
+        width: 50px;
+    }
+}
+
 .container-ayuda {
     height: 100vh;
 }
 /* FIN DE LA SECCION : PAGES/AYUDA.HTML */
-
-/* SECCION : PAGES/JUGADORES */
-
-/* FIN DE LA SECCION : PAGES/JUGADORES */
 
 /*-------------------------------------------- AREA FOOTER #GLOBAL# --------------------------------------------*/
 .footer-container {
@@ -797,9 +806,12 @@ body {
             align-content: center;
             justify-content: center;
             .articulo1 {
+                width: 100%;
+                height: auto;
                 img {
                     width: 100%;
                     height: auto;
+                    filter: grayscale(0);
                 }
             }
         }
@@ -829,6 +841,8 @@ body {
             align-items: center;
             align-content: center;
             .articulo1 {
+                width: 40%;
+                height: auto;
                 img {
                     width: 100%;
                     height: auto;

@@ -1191,6 +1191,10 @@ body {
 
 /* FIN DE LA SECCION : PAGES/RECLUTACION.HTML */
 /* SECCION : PAGES/AYUDA.HTML */
+.container-ayuda {
+  text-align: center;
+}
+
 .container-ayuda .ayuda {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1205,17 +1209,38 @@ body {
   text-align: center;
 }
 
-.areaTexto {
+.container-ayuda input {
+  width: auto;
+}
+
+.buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.buscador .areaTexto {
   text-align: center;
   overflow: hidden;
   border-radius: 5rem;
-  border: #3d3c3c solid 2px;
 }
 
-.areaTexto textarea {
-  width: 100%;
-  height: auto;
+.buscador .areaTexto textarea {
+  border: #cccccc solid 2.5px;
+  width: 50%;
+  height: 32px;
   text-align: center;
+  font-size: 16px;
+}
+
+.buscador input {
+  width: 50px;
 }
 
 .container-ayuda {
@@ -1223,8 +1248,6 @@ body {
 }
 
 /* FIN DE LA SECCION : PAGES/AYUDA.HTML */
-/* SECCION : PAGES/JUGADORES */
-/* FIN DE LA SECCION : PAGES/JUGADORES */
 /*-------------------------------------------- AREA FOOTER #GLOBAL# --------------------------------------------*/
 .footer-container {
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(#b3b3b3), to(#8e8e8e));
@@ -1556,9 +1579,15 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container--jugadores .galeria-jugadores .articulo1 {
+    width: 100%;
+    height: auto;
+  }
   .container--jugadores .galeria-jugadores .articulo1 img {
     width: 100%;
     height: auto;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
 }
 
@@ -1605,6 +1634,10 @@ body {
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+  .container--jugadores .galeria-jugadores .articulo1 {
+    width: 40%;
+    height: auto;
   }
   .container--jugadores .galeria-jugadores .articulo1 img {
     width: 100%;
