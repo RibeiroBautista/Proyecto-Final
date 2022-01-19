@@ -851,4 +851,38 @@ body {
         }
     }
 }
+@media screen and (min-width:1300px) {
+    .container--jugadores {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .titulo--jugadores {
+            text-align: center;
+            width: 75%;
+            height: auto;
+        }
+        .galeria-jugadores {
+            width: 90%;
+            height: auto;
+            padding-bottom: 5rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            .articulo1 {
+                width: 25%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
 /* FIN DE LA SECCION : JUGADORES.HTML/JUGADORES/CSGO.HTML */
